@@ -12,3 +12,8 @@ RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.c
 
 # gke-gcloud-auth-plugin
 RUN apt install google-cloud-sdk-gke-gcloud-auth-plugin -y
+
+# tools
+RUN apt install curl jq vim -y
+
+CMD ["sleep", "100000"]
